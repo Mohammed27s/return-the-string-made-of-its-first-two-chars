@@ -1,19 +1,19 @@
-import java.util.Scanner;
-public class StringPractice {
+public class Two {
+    public static void main(String[] args){
+
+        System.out.println("***Returning the first two character ***");
 
 
-    public static void main(String[] args) {
+        String firstTwo = "Hello";
+        int lengthSave = firstTwo.length();
 
-        Scanner n = new Scanner(System.in);
-
-
-        System.out.println("*** Welcome to Giving String system *** ");
-
-        System.out.println("Enter a word : ");
-        String input_word = n.nextLine();
+        String answer = firstTwo.substring(0,Math.min(lengthSave, 2));
 
 
-        System.out.println("The two first two character of your word is :  "+input_word.substring(0,2));
+
+        System.out.println("The first two strings in the word is : "+answer);
+
+
 
 
 
@@ -22,7 +22,5 @@ public class StringPractice {
 
 
     }
-
-
 
 }
